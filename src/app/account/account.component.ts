@@ -52,7 +52,7 @@ export class AccountComponent implements OnInit {
       }
 
       if (profile) {
-        this.profile = profile;
+        this.profile = profile as Profile;
       }
     } catch (error) {
       if (error instanceof Error) {

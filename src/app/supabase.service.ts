@@ -41,7 +41,7 @@ export class SupabaseService {
   profile(user: User) {
     return this.supabase
       .from('profiles')
-      .select(`username, website, avatar_url`)
+      .select(`id, username, website, avatar_url`)
       .eq('id', user.id)
       .single();
   }
@@ -62,8 +62,9 @@ export class SupabaseService {
 
   updateProfile(profile: Profile) {
     const update = {
+      id: profile.id as string,
       ...profile,
-      updated_at: new Date(),
+      updated_at: new Date().toString(),
     };
 
     return this.supabase.from('profiles').upsert(update);

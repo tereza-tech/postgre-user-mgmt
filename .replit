@@ -1,4 +1,4 @@
-entrypoint = "index.js"
+entrypoint = "src/main.ts"
 
 hidden = [".config"]
 
@@ -74,7 +74,7 @@ support = true
       cwd = "."
       environment = []
       pauseForSourceMap = false
-      program = "./index.js"
+      program = "./src/main.ts"
       request = "launch"
       sourceMaps = true
       stopOnEntry = false

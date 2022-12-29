@@ -1,6 +1,8 @@
 {
-  "name": "angular-user-management",
-  "version": "0.0.0",
+  "name": "postgre-user-mgmt",
+  "version": "1.0.0",
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.",
+  "main": "./src/main.ts",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +10,16 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tereza-tech/postgre-user-mgmt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tereza-tech/postgre-user-mgmt/issues"
+  },
+  "homepage": "https://github.com/tereza-tech/postgre-user-mgmt#readme",
   "dependencies": {
     "@angular/animations": "^14.2.0",
     "@angular/common": "^14.2.0",
